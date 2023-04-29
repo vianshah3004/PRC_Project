@@ -60,8 +60,9 @@ void pay()
 }
 void main()
 {
+    system("color 70");
     int choice;
-     int tom,month=1500,months=8000,year=15000,trainsplaner;
+    int tom,month=1500,months=8000,year=15000,trainsplaner;
     printf(" - Welcome to Ace\n\n");
     printf("\t1. Press 1 for Room Booking\n");
     printf("\t2. Press 2 for Ace restaurant\n");
@@ -2539,7 +2540,7 @@ void main()
             else if(caterer1==0)
             {
                 printf("-----------------------------------------------------------------------\n");
-                printf("\n - Your total amount (with decoration and without caterer*) is: Rs %d \n",amt4);
+                printf(" - Your total amount (with decoration and without caterer*) is: Rs %d \n",amt4);
                 printf("-----------------------------------------------------------------------\n");
             }
 
