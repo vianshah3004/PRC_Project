@@ -1055,8 +1055,6 @@ void main()
                                                                                 printf("-----------------------------------------------------------------\n");
                                                                                 printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                pay();
-
 
                                                                             }
 
@@ -1072,7 +1070,6 @@ void main()
                                                                                 printf("-----------------------------------------------------------------\n");
                                                                                 printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                pay();
                                                                             }
                                                                             else if(plate==3)
                                                                             {
@@ -1085,7 +1082,6 @@ void main()
                                                                                 printf("-----------------------------------------------------------------\n");
                                                                                 printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                pay();
                                                                             }
 
                                                                             else
@@ -1143,7 +1139,6 @@ void main()
                                                                     printf("-----------------------------------------------------------------\n");
                                                                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                                     printf("-----------------------------------------------------------------\n");
-                                                                    pay();
                                                                 }
 
                                                                 else if(plate==2)
@@ -1157,7 +1152,6 @@ void main()
                                                             printf("-----------------------------------------------------------------\n");
                                                             printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                             printf("-----------------------------------------------------------------\n");
-                                                            pay();
                                                         }
 
                                                         else if(plate==3)
@@ -1171,7 +1165,6 @@ void main()
                                                         printf("-----------------------------------------------------------------\n");
                                                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                     printf("-----------------------------------------------------------------\n");
-                                                    pay();
                                                 }
 
                                                 else
@@ -1244,7 +1237,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1259,7 +1251,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1274,7 +1265,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1332,7 +1322,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1347,7 +1336,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1362,7 +1350,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1451,7 +1438,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1466,7 +1452,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1481,7 +1466,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1541,7 +1525,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1556,7 +1539,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1571,7 +1553,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1642,7 +1623,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1657,7 +1637,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1672,7 +1651,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1731,7 +1709,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1746,7 +1723,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1761,7 +1737,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1818,7 +1793,7 @@ void main()
 
    printf("\n - Create Password: ");
    scanf("%s", &password1);
-   system("cls");
+
    // Login code - start
     char username[20];
     char password[20];
@@ -1896,7 +1871,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1910,7 +1884,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -1924,7 +1897,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -1981,7 +1953,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -1995,7 +1966,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2009,7 +1979,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2022,7 +1991,7 @@ void main()
             else if(caterer1==0)
             {
                 printf("------------------------------------------------------------------\n");
-                printf(" - Your total amount (without decoration and caterer*) is: Rs %d \n",amt1);
+                printf("\n - Your total amount (without decoration and caterer*) is: Rs %d \n",amt1);
                 printf("------------------------------------------------------------------\n");
             }
 
@@ -2080,7 +2049,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2094,7 +2062,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2108,7 +2075,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2164,7 +2130,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2178,7 +2143,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2192,7 +2156,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2276,7 +2239,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2290,7 +2252,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2304,7 +2265,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2364,7 +2324,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2378,7 +2337,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2392,7 +2350,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2463,7 +2420,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2477,7 +2433,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2491,7 +2446,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
@@ -2520,7 +2474,7 @@ void main()
             printf("\n - Amount without decoration till now is: %drs \n",amt4);
 
             catererChoice16:
-
+            printf("\n - Amount without decoration till now is: %drs \n",amt2);
             printf("\n - Do you want to add our caterer package for whole day? \n");
             printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
@@ -2549,7 +2503,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==2)
@@ -2563,7 +2516,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else if(plate==3)
@@ -2577,7 +2529,6 @@ void main()
                     printf("-----------------------------------------------------------------\n");
                     printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
-                    pay();
                 }
 
                 else
