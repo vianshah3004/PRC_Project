@@ -110,7 +110,7 @@ void main()
             phone:
             printf("\n - Enter Phone Number : ");
             scanf("%s",&NUM);
-             len=strlen(NUM);
+            len=strlen(NUM);
             if(len!=10)
             {
                 printf("\n - Enter 10 digit phone number\n");
@@ -119,7 +119,7 @@ void main()
             aadhaar:
             printf("\n - Enter Aadhaar Number : ");
             scanf("%s",&AADHAAR);
-           len=strlen(AADHAAR);
+            len=strlen(AADHAAR);
             if(len!=12)
             {
                 printf("\n - Enter a valid 12 digit Aadhaar Number\n");
@@ -993,24 +993,22 @@ void main()
                                                                printf(" and if not then some nominal charge will be applicable! \n\n");
                                                                printf("\n - The additional rates will be added as per your requirements! \n\n");
                                                                top:
-                                                               printf("\n - Are you already having a stay in our hotel? \nEnter 1 for staying or enter 0 if not! \n");
+                                                               printf("\n - Are you already having a stay in our hotel? \n\n - Enter 1 for staying or enter 0 if not : ");
                                                                scanf("%d",&staying);
                                                                if(staying==1)
                                                                {
                                                                printf("\n - Great!!! You are already enjoying our stay! \n");
-                                                               printf("\n - Kindly select the purpose to book the hall: \n");
-                                                               main_start1:
-                                                               printf("\n - Enter 1 if you want to book the hall for Banquet purpose-\n");
-                                                               printf("\n - Enter 2 if you want to book the hall for Party purpose-\n");
+                                                               printf("\n - Kindly select the purpose to book the hall ( Enter 1-Banquet Hall and 2-Party Hall ) : ");
                                                                scanf("%d", &purpose);
+                                                               main_start1:
+
 
                                                                switch(purpose)
                                                                {
                                                                     case 1:
                                                                     printf("\n - How much capacity of hall is required to you? \n");
                                                                     s_1:
-                                                                    printf("\n - Enter 1 for 300 people capacity hall @30,000rs per day! \n");
-                                                                    printf("\n - Enter 2 for 600 people capacity hall @50,000rs per day! \n");
+                                                                    printf("\n - Enter 1-300 people capacity; 2-600 people capacity : ");
                                                                     int capacity1;
                                                                     scanf("%d", &capacity1);
 
@@ -1021,14 +1019,14 @@ void main()
                                                                     capact1:
                                                                     printf("\n - Do you want to add additional high decoration for whole day @20,000rs? \n");
                                                                     int decorate1,caterer1;
-                                                                    printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+                                                                    printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
                                                                     scanf("%d",&decorate1);
                                                                     if(decorate1==1)
                                                                     {
                                                                         int res1 = amt1 + decamt1;
                                                                         catererChoice1:
                                                                         printf("\n - Do you want to add our caterer package for whole day? \n");
-                                                                        printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+                                                                        printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
                                                                         scanf("%d",&caterer1);
                                                                         if(caterer1==1)
                                                                         {
@@ -1038,22 +1036,23 @@ void main()
                                                                             printf("3. Rs 350 / plate \n");
                                                                             printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                                                                             plateCategory1:
-                                                                            printf("\n - Which category of plate you want to choose? \n");
+
                                                                             printf("Press 1 to choose plate 1 \n");
                                                                             printf("Press 2 to choose plate 2 \n");
                                                                             printf("Press 3 to choose plate 3 \n");
+                                                                            printf("\n - Which category of plate you want to choose? : ");
                                                                             scanf("%d",&plate);
                                                                             if(plate==1)
                                                                             {
                                                                                 printf("\n - You have selected plate 1! \n");
-                                                                                printf("\n - How much quantity of plates you require for your function? \n");
+                                                                                printf("\n - How much quantity of plates you require for your function ? :");
                                                                                 scanf("%d",&pltquantity);
 
                                                                                 int totplate = 170 * pltquantity;
                                                                                 int totamt = totplate + res1;
                                                                                 int final_amt = totamt - (totamt/10);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                                                                                printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
 
                                                                             }
@@ -1061,26 +1060,26 @@ void main()
                                                                             else if(plate==2)
                                                                             {
                                                                                 printf("\n - You have selected plate 2! \n");
-                                                                                printf("\n - How much quantity of plates you require for your function? \n");
+                                                                                printf("\n - How much quantity of plates you require for your function ? :");
                                                                                 scanf("%d",&pltquantity);
 
                                                                                 int totplate = 260 * pltquantity;
                                                                                 int totamt = totplate + res1;
                                                                                 int final_amt = totamt - (totamt/10);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                                                                                printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
                                                                             }
                                                                             else if(plate==3)
                                                                             {
                                                                                 printf("\n - You have selected plate 3! \n");
-                                                                                printf("\n - How much quantity of plates you require for your function? \n");
+                                                                                printf("\n - How much quantity of plates you require for your function ? :");
                                                                                 scanf("%d",&pltquantity);
                                                                                 int totplate = 350 * pltquantity;
                                                                                 int totamt = totplate + res1;
                                                                                 int final_amt = totamt - (totamt/10);
                                                                                 printf("-----------------------------------------------------------------\n");
-                                                                                printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                                                                                printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                                                                                 printf("-----------------------------------------------------------------\n");
                                                                             }
 
@@ -1112,7 +1111,7 @@ void main()
                                                                     {
                                                                         catererChoice2:
                                                                         printf("\n - Do you want to add our caterer package for whole day? \n");
-                                                                        printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+                                                                        printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
                                                                         scanf("%d",&caterer1);
                                                                         if(caterer1==1)
                                                                         {
@@ -1122,47 +1121,48 @@ void main()
                                                                         printf("3. Rs 350 / plate \n");
                                                                         printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                                                                         plateCategory2:
-                                                                        printf("\n - Which category of plate you want to choose? \n");
+
                                                                         printf("Press 1 to choose plate 1 \n");
                                                                         printf("Press 2 to choose plate 2 \n");
                                                                         printf("Press 3 to choose plate 3 \n");
+                                                                        printf("\n - Which category of plate you want to choose? : ");
                                                                     scanf("%d",&plate);
                                                                     if(plate==1)
                                                                     {
                                                                         printf("\n - You have selected plate 1! \n");
-                                                                        printf("\n - How much quantity of plates you require for your function? \n");
+                                                                        printf("\n - How much quantity of plates you require for your function ? :");
                                                                         scanf("%d",&pltquantity);
 
                                                                         int totplate = 170 * pltquantity;
                                                                         int totamt = totplate + amt1;
                                                                     printf("-----------------------------------------------------------------\n");
-                                                                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                                                                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                                     printf("-----------------------------------------------------------------\n");
                                                                 }
 
                                                                 else if(plate==2)
                                                             {
                                                                 printf("\n - You have selected plate 2! \n");
-                                                                printf("\n - How much quantity of plates you require for your function? \n");
+                                                                printf("\n - How much quantity of plates you require for your function ? :");
                                                                 scanf("%d",&pltquantity);
 
                                                                 int totplate = 260 * pltquantity;
                                                             int totamt = totplate + amt1;
                                                             printf("-----------------------------------------------------------------\n");
-                                                            printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                                                            printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                             printf("-----------------------------------------------------------------\n");
                                                         }
 
                                                         else if(plate==3)
                                                         {
                                                             printf("\n - You have selected plate 3! \n");
-                                                        printf("\n - How much quantity of plates you require for your function? \n");
+                                                        printf("\n - How much quantity of plates you require for your function ? :");
                                                         scanf("%d",&pltquantity);
 
                                                         int totplate = 350 * pltquantity;
                                                         int totamt = totplate + amt1;
                                                         printf("-----------------------------------------------------------------\n");
-                                                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                                                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                                                     printf("-----------------------------------------------------------------\n");
                                                 }
 
@@ -1201,14 +1201,14 @@ void main()
                     capact2:
                     printf("\n - Do you want to add additional high decoration for whole day @20,000rs? \n");
                     int decorate2;
-                    printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+                    printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
                     scanf("%d",&decorate2);
                     if(decorate2==1)
                     {
                         int res1 = amt2 + decamt1;
                         catererChoice3:
                         printf("\n - Do you want to add our caterer package for whole day? \n");
-                        printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+                        printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
                         scanf("%d",&caterer1);
                         if(caterer1==1)
                         {
@@ -1218,50 +1218,51 @@ void main()
                             printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory3:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? :");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? :");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? :");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1292,7 +1293,7 @@ void main()
             catererChoice4:
             printf("\n - Amount without decoration till now is: %drs \n",amt2);
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1302,50 +1303,51 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory4:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? :");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt2;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1388,8 +1390,8 @@ void main()
         case 2:
         printf("\n - How much capacity of hall is required to you? \n");
         s_2:
-        printf("\n - Enter 1 for 100 people capacity hall @10000rs per day! \n");
-        printf("\n - Enter 2 for 200 people capacity hall @20000rs per day! \n");
+        printf("\n - Enter 1 for 100 peoples of capacity of hall @10000rs per day and 2 for 200 peoples of capacity of hall @20000rs per day: ");
+
         int capacity2;
         scanf("%d", &capacity2);
 
@@ -1400,14 +1402,14 @@ void main()
         capact3:
         printf("\n - Do you want to add additional high decoration for whole day @10000rs? \n");
         int decorate3,caterer1;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate3);
         if(decorate3==1)
         {
             int res1 = amt3 + decamt2;
             catererChoice5:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1417,50 +1419,51 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory5:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1493,7 +1496,7 @@ void main()
             catererChoice6:
             printf("\n - Amount without decoration till now is: %drs \n",amt2);
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1503,50 +1506,51 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory6:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("\n - Press 1 to choose plate 1 \n");
                 printf("\n - Press 2 to choose plate 2 \n");
                 printf("\n - Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt3;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt3;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt3;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1583,14 +1587,14 @@ void main()
         capact4:
         printf("\n - Do you want to add additional high decoration for whole day @10000rs? \n");
         int decorate4;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate4);
         if(decorate4==1)
         {
             int res1 = amt4 + decamt2;
             catererChoice7:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1600,50 +1604,51 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory7:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + res1;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1675,7 +1680,7 @@ void main()
             catererChoice8:
             printf("\n - Amount without decoration till now is: %drs \n",amt2);
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1685,50 +1690,51 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory8:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt4;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                   printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt4;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt4;
                     int final_amt = totamt - (totamt/10);
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",final_amt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1811,8 +1817,7 @@ void main()
     }
    printf("\n - Kindly select the purpose to book the hall \n");
    main_start2:
-   printf("\n - Enter 1 if you want to book the hall for Banquet purpose\n");
-   printf("\n - Enter 2 if you want to book the hall for party purpose\n");
+     printf("\n - Enter 1 for Banquet purpose and 2 for Party purpose -\n");
    scanf("%d", &purpose);
 
    switch(purpose)
@@ -1820,11 +1825,9 @@ void main()
         case 1:
         printf("\n - How much capacity of hall is required to you? \n");
         s1:
-        printf("\n - Enter 1 for 300 peoples of capacity of hall @30000rs per day! \n");
-        printf("\n - Enter 2 for 600 peoples of capacity of hall @50000rs per day! \n");
+        printf("\n - Enter 1-300 people capacity; 2-600 people capacity :  \n");
         int capacity1;
         scanf("%d", &capacity1);
-
         switch(capacity1)
         {
         case 1:
@@ -1832,7 +1835,7 @@ void main()
         capact5:
         printf("\n - Do you want to add additional high decoration for whole day @20,000rs? \n");
         int decorate1,caterer1;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate1);
         if(decorate1==1)
         {
@@ -1840,7 +1843,7 @@ void main()
             printf("\n - Amount with decoration till now is: %drs \n",res1);
             catererChoice9:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1850,47 +1853,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory9:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -1921,7 +1925,7 @@ void main()
             printf("\n - Amount without decoration till now is: %drs \n",amt1);
             catererChoice10:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -1931,47 +1935,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory10:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                   printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2009,14 +2014,14 @@ void main()
         capact6:
         printf("\n - Do you want to add additional high decoration for whole day @20,000rs? \n");
         int decorate2;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate2);
         if(decorate2==1)
         {
             int res1 = amt2 + decamt1;
             catererChoice11:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2026,47 +2031,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory11:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2096,7 +2102,7 @@ void main()
             printf("\n - Amount without decoration till now is: %drs \n",amt2);
             catererChoice12:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2106,47 +2112,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory12:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt2;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2185,8 +2192,7 @@ void main()
         case 2:
         printf("\n - How much capacity of hall is required to you? \n");
         s2:
-        printf("\n - Enter 1 for 100 peoples of capacity of hall @10000rs per day! \n");
-        printf("\n - Enter 2 for 200 peoples of capacity of hall @20000rs per day! \n");
+        printf("\n - Enter 1 for 100 peoples of capacity of hall @10000rs per day and 2 for 200 peoples of capacity of hall @20000rs per day: ");
         int capacity2;
         scanf("%d", &capacity2);
 
@@ -2197,7 +2203,7 @@ void main()
         capact7:
         printf("\n - Do you want to add additional high decoration for whole day @10000rs? \n");
         int decorate3;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate3);
         if(decorate3==1)
         {
@@ -2205,7 +2211,7 @@ void main()
             printf("\n - Amount with decoration till now is: %drs \n",res1);
             catererChoice13:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2215,47 +2221,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory13:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("\n - Press 1 to choose plate 1 \n");
                 printf("\n - Press 2 to choose plate 2 \n");
                 printf("\n - Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2289,7 +2296,7 @@ void main()
             printf("\n - Amount without decoration till now is: %drs \n",amt3);
             catererChoice14:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2299,47 +2306,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory14:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt3;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt3;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt3;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2375,7 +2383,7 @@ void main()
         capact8:
         printf("\n - Do you want to add additional high decoration for whole day @10000rs? \n");
         int decorate4;
-        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip! \n");
+        printf("\n - Enter 1 if you want additional decoration! or enter 0 to skip : ");
         scanf("%d",&decorate4);
         if(decorate4==1)
         {
@@ -2384,7 +2392,7 @@ void main()
 
             catererChoice15:
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2394,47 +2402,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory15:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + res1;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2466,7 +2475,7 @@ void main()
             catererChoice16:
             printf("\n - Amount without decoration till now is: %drs \n",amt2);
             printf("\n - Do you want to add our caterer package for whole day? \n");
-            printf("\n - Enter 1 if you want our caterer! or enter 0 to skip! \n");
+            printf("\n - Enter 1 if you want our caterer or enter 0 to skip : ");
             scanf("%d",&caterer1);
             if(caterer1==1)
             {
@@ -2476,47 +2485,48 @@ void main()
                 printf("3. Rs 350 / plate \n");
                 printf("\n - The number of food varieties will depend on the price range of the plates! \n");
                 plateCategory16:
-                printf("\n - Which category of plate you want to choose? \n");
+
                 printf("Press 1 to choose plate 1 \n");
                 printf("Press 2 to choose plate 2 \n");
                 printf("Press 3 to choose plate 3 \n");
+                printf("\n - Which category of plate you want to choose? : ");
                 scanf("%d",&plate);
                 if(plate==1)
                 {
                     printf("\n - You have selected plate 1! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 170 * pltquantity;
                     int totamt = totplate + amt4;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==2)
                 {
                     printf("\n - You have selected plate 2! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 260 * pltquantity;
                     int totamt = totplate + amt4;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
                 else if(plate==3)
                 {
                     printf("\n - You have selected plate 3! \n");
-                    printf("\n - How much quantity of plates you require for your function? \n");
+                    printf("\n - How much quantity of plates you require for your function ? : ");
                     scanf("%d",&pltquantity);
 
                     int totplate = 350 * pltquantity;
                     int totamt = totplate + amt4;
                     printf("-----------------------------------------------------------------\n");
-                    printf("\n - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
+                    printf(" - Your total bill amount (with decoration and caterer) is: Rs %d \n",totamt);
                     printf("-----------------------------------------------------------------\n");
                 }
 
@@ -2603,23 +2613,3 @@ void main()
 
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
